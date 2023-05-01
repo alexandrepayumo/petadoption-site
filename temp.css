@@ -1,0 +1,131 @@
+:root {
+    /* Theme: use white as the main colour: use these colours to fill in boxes and stuff */
+    --dark-red: #2E1114;
+    --red: #501B1D;
+    --purple: #64485C;
+    --light-purple: #83677B;
+    --grey: #ADADAD;
+    --white: #f1f0f0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: var(--white);
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+    /*height: 100%;*/
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: var(--dark-red);
+    color: var(--white);
+    padding: 0;
+    margin: 0;
+    /*margin-bottom: -16px;*/
+    /*display: flex;
+    align-items: center;*/
+}
+
+#headerTitle, #headerImg {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#headerTitle {
+    margin-left: 10px;
+}
+
+#headerImg {
+    text-align: right;
+}
+
+.right {
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+    margin-top: 6px;
+}
+
+
+
+#active {
+    background-color: rgb(141, 181, 135);
+}
+
+main {
+    height: 100%;
+    display: flex;
+}
+
+
+#sidebar {
+    background-color: rgb(230,230,230);
+    width: 20%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+.side {
+    background-color: rgb(230, 230, 230);
+    align-items: center;
+}
+
+#sideList {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side, .sideLink {
+    width: 100%;
+    height: 40px;
+    display: flex;
+}
+
+.sideLink {
+    text-decoration: none;
+}
+
+.side:hover {
+    background-color: rgb(103, 103, 103);
+    color: white;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--grey);
+    padding: 20px;
+    position: relative;
+}
+
+#content {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /*width: 79%;*/
+    /* if i make width to 80% it goes to the next line */
+    padding-left: 20px;
+    /* THE PROBLEM WITH DISPLAY BLOCK IS THAT ITS WEIRDDD*/
+}
+
+
+img {
+    border-radius: 10px;
+}
+
+.special {
+    display: block;
+}
+
+.petToBrowse {
+    margin-bottom: 20px;
+}
